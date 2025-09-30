@@ -9,14 +9,16 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 
 @Entity
-class Materia {
+@Table(name = "Materia")
+public class Materia {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdMateria")
+    @Column(name = "IDMATERIA")
     private int idMateria;
     
     @Column(name = "Nombre")

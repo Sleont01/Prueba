@@ -17,26 +17,26 @@ public class Profesor {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdProfesor")
+    @Column(name = "IDPROFESOR")
     private int IdProfesor;
-    @Column(name="Nombre")
+    @Column(name="NOMBRE")
     private String nombre;
-    @Column(name="ApellidoPaterno")
+    @Column(name="APELLIDOPATERNO")
     private String apellidoPaterno;
-    @Column(name= "ApellidoMaterno")
+    @Column(name= "APELLIDOMATERNO")
     private String apellidoMaterno;
-    @Column(name="Email")
+    @Column(name="EMAIL")
     private String email;
-    @Column(name="Password")
+    @Column(name="PASSWORD")
     private String password;
-    @Column(name="Telefono")
+    @Column(name="TELEFONO")
     private String telefono;
-    @Column(name="Celular")
+    @Column(name="CELULAR")
     private String celular;
-    @Column(name = "FechaIngreso")
+    @Column(name = "FECHAINGRESO")
     private Date fechaIngreso;
     @ManyToOne
-    @JoinColumn( name = "IdMateria")
+    @JoinColumn(name = "IDMATERIA")
     private Materia materia;
     @Column(name = "Matricula")
     private String matricula;
